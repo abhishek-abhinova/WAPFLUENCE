@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Business Signup - Wapfluence</title>
+    <link rel="stylesheet" href="../../public/css/style.css">
+    <link rel="stylesheet" href="../../public/css/portal.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Poppins:wght@600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="auth-container">
+        <div class="auth-box">
+            <h1>Join as Business</h1>
+            <p class="auth-subtitle">Start your influencer marketing campaigns</p>
+            <form class="auth-form">
+                <input type="text" placeholder="Company Name" required>
+                <input type="email" placeholder="Business Email" required>
+                <input type="tel" placeholder="Phone Number" required>
+                <input type="password" placeholder="Password" required>
+                <button type="submit" class="btn-primary">Create Account</button>
+            </form>
+            <p class="auth-link">Already have an account? <a href="login.html">Login</a></p>
+            <a href="../../index.html" class="back-link">← Back to Home</a>
+        </div>
+    </div>
+    <script>
+        document.querySelector('.auth-form').addEventListener('submit', (e) => {
+            e.preventDefault();
+            window.location.href = 'dashboard.html';
+        });
+    </script>
+</body>
+</html>

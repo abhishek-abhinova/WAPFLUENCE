@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Submit Proof - Wapfluence</title>
+    <link rel="stylesheet" href="../../public/css/style.css">
+    <link rel="stylesheet" href="../../public/css/portal.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Poppins:wght@600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav class="portal-nav">
+        <div class="logo">Wapfluence</div>
+        <div class="nav-menu">
+            <a href="dashboard.html">Dashboard</a>
+            <a href="campaigns.html" class="active">Campaigns</a>
+            <a href="wallet.html">Wallet</a>
+            <a href="profile-setup.html">Profile</a>
+        </div>
+        <div class="user-menu">Influencer</div>
+    </nav>
+
+    <div class="portal-container">
+        <h1>Submit Campaign Proof</h1>
+        
+        <div class="proof-box">
+            <h2>Tech Gadget Launch</h2>
+            <p>Brand: TechCorp | Budget: ₹2,500</p>
+            
+            <form class="proof-form">
+                <div class="form-group">
+                    <label>Upload Screenshots</label>
+                    <input type="file" multiple accept="image/*" required>
+                    <small>Upload WhatsApp status/message screenshots</small>
+                </div>
+                
+                <div class="form-group">
+                    <label>Shortlink Clicks (if applicable)</label>
+                    <input type="number" placeholder="Number of clicks">
+                </div>
+                
+                <div class="form-group">
+                    <label>Additional Notes</label>
+                    <textarea rows="4" placeholder="Any additional information for the brand"></textarea>
+                </div>
+                
+                <button type="submit" class="btn-primary">Submit Proof</button>
+            </form>
+        </div>
+    </div>
+    
+    <script>
+        document.querySelector('.proof-form').addEventListener('submit', (e) => {
+            e.preventDefault();
+            alert('Proof submitted successfully! Payment will be released after verification.');
+            window.location.href = 'campaigns.html';
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Campaigns - Wapfluence</title>
+    <link rel="stylesheet" href="../../public/css/style.css">
+    <link rel="stylesheet" href="../../public/css/portal.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Poppins:wght@600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav class="portal-nav">
+        <div class="logo">Wapfluence</div>
+        <div class="nav-menu">
+            <a href="dashboard.html">Dashboard</a>
+            <a href="campaigns.html" class="active">Campaigns</a>
+            <a href="wallet.html">Wallet</a>
+            <a href="profile-setup.html">Profile</a>
+        </div>
+        <div class="user-menu">Influencer</div>
+    </nav>
+
+    <div class="portal-container">
+        <h1>My Campaigns</h1>
+        
+        <div class="tabs">
+            <button class="tab active">Active</button>
+            <button class="tab">Pending</button>
+            <button class="tab">Completed</button>
+        </div>
+
+        <div class="campaign-list">
+            <div class="campaign-card">
+                <div class="campaign-header">
+                    <h3>Tech Gadget Launch</h3>
+                    <span class="badge badge-active">Active</span>
+                </div>
+                <p>Brand: TechCorp | Budget: ₹2,500 | Deadline: 2 days left</p>
+                <div class="card-actions">
+                    <button class="btn-primary" onclick="window.location.href='proof-submission.html'">Submit Proof</button>
+                </div>
+            </div>
+
+            <div class="campaign-card">
+                <div class="campaign-header">
+                    <h3>E-commerce Sale</h3>
+                    <span class="badge badge-active">Active</span>
+                </div>
+                <p>Brand: ShopNow | Budget: ₹1,500 | Deadline: 4 days left</p>
+                <div class="card-actions">
+                    <button class="btn-primary" onclick="window.location.href='proof-submission.html'">Submit Proof</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

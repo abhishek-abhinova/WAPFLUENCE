@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wallet - Wapfluence</title>
+    <link rel="stylesheet" href="../../public/css/style.css">
+    <link rel="stylesheet" href="../../public/css/portal.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Poppins:wght@600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav class="portal-nav">
+        <div class="logo">Wapfluence</div>
+        <div class="nav-menu">
+            <a href="dashboard.html">Dashboard</a>
+            <a href="create-campaign.html">Create Campaign</a>
+            <a href="discovery.html">Find Influencers</a>
+            <a href="campaigns.html">My Campaigns</a>
+            <a href="wallet.html" class="active">Wallet</a>
+        </div>
+        <div class="user-menu">Business</div>
+    </nav>
+
+    <div class="portal-container">
+        <h1>Wallet</h1>
+        
+        <div class="wallet-summary">
+            <div class="wallet-card">
+                <h3>₹15,000</h3>
+                <p>Available Balance</p>
+            </div>
+            <div class="wallet-card">
+                <h3>₹85,000</h3>
+                <p>Total Spent</p>
+            </div>
+            <div class="wallet-card">
+                <h3>₹12,000</h3>
+                <p>In Escrow</p>
+            </div>
+        </div>
+
+        <button class="btn-primary" onclick="document.getElementById('addFundsModal').style.display='block'">Add Funds</button>
+
+        <div class="section">
+            <h2>Transaction History</h2>
+            <table class="transaction-table">
+                <thead>
+                    <tr>
+                        <th>Date</th>
+                        <th>Description</th>
+                        <th>Amount</th>
+                        <th>Status</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Jan 15, 2024</td>
+                        <td>Campaign: Tech Gadget</td>
+                        <td>-₹25,000</td>
+                        <td><span class="badge badge-active">Active</span></td>
+                    </tr>
+                    <tr>
+                        <td>Jan 10, 2024</td>
+                        <td>Wallet Top-up</td>
+                        <td>+₹50,000</td>
+                        <td><span class="badge badge-success">Completed</span></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <div id="addFundsModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="document.getElementById('addFundsModal').style.display='none'">&times;</span>
+            <h2>Add Funds</h2>
+            <form class="withdraw-form">
+                <div class="form-group">
+                    <label>Amount (₹)</label>
+                    <input type="number" placeholder="Enter amount" required>
+                </div>
+                <div class="form-group">
+                    <label>Payment Method</label>
+                    <select>
+                        <option>Credit/Debit Card</option>
+                        <option>UPI</option>
+                        <option>Net Banking</option>
+                    </select>
+                </div>
+                <button type="submit" class="btn-primary">Add Funds</button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>

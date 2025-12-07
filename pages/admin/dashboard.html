@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard - Wapfluence</title>
+    <link rel="stylesheet" href="../../public/css/style.css">
+    <link rel="stylesheet" href="../../public/css/portal.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Poppins:wght@600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav class="portal-nav">
+        <div class="logo">Wapfluence Admin</div>
+        <div class="nav-menu">
+            <a href="dashboard.html" class="active">Dashboard</a>
+            <a href="verification.html">Verification</a>
+            <a href="campaigns.html">Campaigns</a>
+            <a href="finance.html">Finance</a>
+        </div>
+        <div class="user-menu">Admin</div>
+    </nav>
+
+    <div class="portal-container">
+        <h1>Admin Dashboard</h1>
+        
+        <div class="stats-grid">
+            <div class="stat-card">
+                <h3>1,245</h3>
+                <p>Total Users</p>
+            </div>
+            <div class="stat-card">
+                <h3>₹2.5M</h3>
+                <p>Total Revenue</p>
+            </div>
+            <div class="stat-card">
+                <h3>₹125K</h3>
+                <p>Escrow Balance</p>
+            </div>
+            <div class="stat-card">
+                <h3>156</h3>
+                <p>Active Campaigns</p>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2>Recent Activity</h2>
+            <table class="transaction-table">
+                <thead>
+                    <tr>
+                        <th>Type</th>
+                        <th>User</th>
+                        <th>Action</th>
+                        <th>Time</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Campaign</td>
+                        <td>TechCorp</td>
+                        <td>Created new campaign</td>
+                        <td>2 mins ago</td>
+                    </tr>
+                    <tr>
+                        <td>Verification</td>
+                        <td>Tech Guru</td>
+                        <td>Submitted proof</td>
+                        <td>15 mins ago</td>
+                    </tr>
+                    <tr>
+                        <td>Payment</td>
+                        <td>Fashion Queen</td>
+                        <td>Withdrew ₹5,000</td>
+                        <td>1 hour ago</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <div class="section">
+            <h2>Pending Actions</h2>
+            <div class="campaign-list">
+                <div class="campaign-card">
+                    <h3>15 Influencers Awaiting Verification</h3>
+                    <button class="btn-primary" onclick="window.location.href='verification.html'">Review Now</button>
+                </div>
+                <div class="campaign-card">
+                    <h3>8 Disputes to Resolve</h3>
+                    <button class="btn-primary">View Disputes</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

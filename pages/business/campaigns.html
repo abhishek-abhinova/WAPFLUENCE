@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Campaigns - Wapfluence</title>
+    <link rel="stylesheet" href="../../public/css/style.css">
+    <link rel="stylesheet" href="../../public/css/portal.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Poppins:wght@600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav class="portal-nav">
+        <div class="logo">Wapfluence</div>
+        <div class="nav-menu">
+            <a href="dashboard.html">Dashboard</a>
+            <a href="create-campaign.html">Create Campaign</a>
+            <a href="discovery.html">Find Influencers</a>
+            <a href="campaigns.html" class="active">My Campaigns</a>
+            <a href="wallet.html">Wallet</a>
+        </div>
+        <div class="user-menu">Business</div>
+    </nav>
+
+    <div class="portal-container">
+        <h1>My Campaigns</h1>
+        
+        <div class="tabs">
+            <button class="tab active">Active</button>
+            <button class="tab">Completed</button>
+            <button class="tab">Draft</button>
+        </div>
+
+        <div class="campaign-list">
+            <div class="campaign-card">
+                <div class="campaign-header">
+                    <h3>Tech Gadget Launch</h3>
+                    <span class="badge badge-active">Active</span>
+                </div>
+                <p>15 Influencers | Budget: ₹25,000 | 8 Proofs Submitted</p>
+                <div class="card-actions">
+                    <button class="btn-primary" onclick="window.location.href='campaign-management.html'">Manage</button>
+                    <button class="btn-outline">View Analytics</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

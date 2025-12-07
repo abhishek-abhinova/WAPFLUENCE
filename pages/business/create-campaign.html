@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create Campaign - Wapfluence</title>
+    <link rel="stylesheet" href="../../public/css/style.css">
+    <link rel="stylesheet" href="../../public/css/portal.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Poppins:wght@600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav class="portal-nav">
+        <div class="logo">Wapfluence</div>
+        <div class="nav-menu">
+            <a href="dashboard.html">Dashboard</a>
+            <a href="create-campaign.html" class="active">Create Campaign</a>
+            <a href="discovery.html">Find Influencers</a>
+            <a href="campaigns.html">My Campaigns</a>
+            <a href="wallet.html">Wallet</a>
+        </div>
+        <div class="user-menu">Business</div>
+    </nav>
+
+    <div class="portal-container">
+        <h1>Create New Campaign</h1>
+        
+        <form class="profile-form">
+            <div class="form-group">
+                <label>Campaign Title</label>
+                <input type="text" placeholder="e.g., Tech Gadget Launch" required>
+            </div>
+            
+            <div class="form-group">
+                <label>Promotion Type</label>
+                <select required>
+                    <option>WhatsApp Status</option>
+                    <option>Group Message</option>
+                    <option>Community Announcement</option>
+                </select>
+            </div>
+            
+            <div class="form-group">
+                <label>Target Niche</label>
+                <select required>
+                    <option>Technology</option>
+                    <option>Fashion</option>
+                    <option>Food</option>
+                    <option>Finance</option>
+                    <option>Health</option>
+                </select>
+            </div>
+            
+            <div class="form-group">
+                <label>Budget per Influencer (₹)</label>
+                <input type="number" placeholder="e.g., 2500" required>
+            </div>
+            
+            <div class="form-group">
+                <label>Campaign Duration (days)</label>
+                <input type="number" placeholder="e.g., 7" required>
+            </div>
+            
+            <div class="form-group">
+                <label>Campaign Brief</label>
+                <textarea rows="5" placeholder="Describe your campaign requirements..." required></textarea>
+            </div>
+            
+            <button type="submit" class="btn-primary">Create Campaign</button>
+        </form>
+    </div>
+    
+    <script>
+        document.querySelector('.profile-form').addEventListener('submit', (e) => {
+            e.preventDefault();
+            alert('Campaign created successfully!');
+            window.location.href = 'discovery.html';
+        });
+    </script>
+</body>
+</html>

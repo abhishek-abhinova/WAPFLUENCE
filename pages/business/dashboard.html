@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Business Dashboard - Wapfluence</title>
+    <link rel="stylesheet" href="../../public/css/style.css">
+    <link rel="stylesheet" href="../../public/css/portal.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Poppins:wght@600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav class="portal-nav">
+        <div class="logo">Wapfluence</div>
+        <div class="nav-menu">
+            <a href="dashboard.html" class="active">Dashboard</a>
+            <a href="create-campaign.html">Create Campaign</a>
+            <a href="discovery.html">Find Influencers</a>
+            <a href="campaigns.html">My Campaigns</a>
+            <a href="wallet.html">Wallet</a>
+        </div>
+        <div class="user-menu">Business</div>
+    </nav>
+
+    <div class="portal-container">
+        <h1>Dashboard</h1>
+        
+        <div class="stats-grid">
+            <div class="stat-card">
+                <h3>12</h3>
+                <p>Active Campaigns</p>
+            </div>
+            <div class="stat-card">
+                <h3>45</h3>
+                <p>Influencers Hired</p>
+            </div>
+            <div class="stat-card">
+                <h3>₹85,000</h3>
+                <p>Total Spent</p>
+            </div>
+            <div class="stat-card">
+                <h3>₹15,000</h3>
+                <p>Wallet Balance</p>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2>Recent Campaigns</h2>
+            <div class="campaign-list">
+                <div class="campaign-card">
+                    <div class="campaign-header">
+                        <h3>Tech Gadget Launch</h3>
+                        <span class="badge badge-active">Active</span>
+                    </div>
+                    <p>15 Influencers | Budget: ₹25,000 | 8 Proofs Submitted</p>
+                    <div class="card-actions">
+                        <button class="btn-primary" onclick="window.location.href='campaign-management.html'">Manage</button>
+                    </div>
+                </div>
+                <div class="campaign-card">
+                    <div class="campaign-header">
+                        <h3>Fashion Sale</h3>
+                        <span class="badge badge-success">Completed</span>
+                    </div>
+                    <p>10 Influencers | Budget: ₹18,000 | All Completed</p>
+                    <div class="card-actions">
+                        <button class="btn-outline">View Report</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
